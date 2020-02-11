@@ -1,0 +1,36 @@
+---
+title: "lauren-vignette-file"
+output: 
+  bookdown::html_document2:
+    base_format: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{lauren-vignette-file}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  message = FALSE,
+  fig.width = 5,
+  fig.retina = 2,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(mysimplecompendium)
+```
+
+```{r starwars-gender-plot, fig.cap="Gender of Starwars Characters"}
+library(tidyverse)
+
+starwars %>%
+  mutate(gender_fct = fct_infreq(gender)) %>%
+  ggplot(aes(gender_fct)) +
+  geom_bar() + 
+  xlab("") + theme_minimal(base_size = 14)
+```
+
+In Figure \@ref(fig:starwars-gender-plot) we can see there is an imbalance of gender ratios.

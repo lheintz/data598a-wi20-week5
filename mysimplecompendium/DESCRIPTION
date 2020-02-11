@@ -1,0 +1,18 @@
+Package: mysimplecompendium
+Type: Package
+Title: Lauren's First Package
+Version: 0.1.0
+Authors@R: person("Lauren", "Heintz", email= "heintzl@uw.edu", role = c("aut", "cre"), comment = c(ORCID = "0000-0002-2834-2112"))
+Maintainer: Lauren Heintz <heintzl@uw.edu> 
+Description: More about what it does (maybe more than one line)
+    Use four spaces when indenting paragraphs within the Description.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: 
+    plyr (>= 0.8.4)
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
+RoxygenNote: 7.0.2
