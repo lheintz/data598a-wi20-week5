@@ -26,5 +26,7 @@ library(mysimplecompendium)
 Please note that the 'mysimplecompendium' project is released with a [Contributor Code of Conduct](CODE_OF_CONDUCT.md). By contributing to this project, you agree to abide by its terms.
 
 ## License
-License is the MIT license and can be found [here](LICENSE.md)
+Text and figures: [MIT License](LICENSE.md)
+Code: See the [DESCRIPTION](DESCRIPTION) file
+Data: CC-0 attribution requested in reuse. 
 
